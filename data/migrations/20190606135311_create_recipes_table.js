@@ -11,10 +11,10 @@ exports.up = function(knex, Promise) {
       // Javascript that translates to our SQL
 
       tbl
-      .integer('ingredients_id')
+      .integer('dishes_id')
       .unsigned()
       .references('id')
-      .inTable('ingredients')
+      .inTable('dishes')
       .onDelete('CASCADE')
       .onUpdate('CASCADE');
       });

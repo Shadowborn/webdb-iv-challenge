@@ -25,6 +25,19 @@ server.get('/api/dishes', async (req, res) => {
 
 // list a role by id
 server.get('/api/dishes/:id', async (req, res) => {
+  
+  const blah1 = function dishRecipes(dishesId) {
+    return db('dishes as d')
+      .join()
+      .select()
+      .where();
+  }
+  const blah2 = function dishIngredients(dishesId) {
+    return db('dishes as d')
+      .join()
+      .select()
+      .where();
+  }
   // get the dishes from the database
   try {
     const role = await db('dishes')

@@ -9,17 +9,7 @@ exports.up = function(knex, Promise) {
       .string('name', 128)
       .notNullable()
       .unique(); 
-      // Javascript that translates to our SQL
-
-      //syntax for a foreign key
-
-      tbl
-      .integer('recipes_id')
-      .unsigned()
-      .references('id')
-      .inTable('recipes')
-      .onDelete('CASCADE')
-      .onUpdate('CASCADE');
+     
       });
   };
 
